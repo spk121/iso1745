@@ -124,19 +124,8 @@ This Master/Slave connection is considered terminated.
 If either Master or Slave sends `DLE+EOT`, they are disconncted
 from the bus.
 
-## The Library and Daemon
+### The Code
 
-This library provides capability to pack and unpack ISO 1745 messages,
-and to connect to and receive messages on a shared ISO 1745 bus.
-It relieves the application from the communication and parsing task,
-allowing it to run a callback-like model, acting when messages are
-received.
-
-In the default implementation, this package provides a simple
-daemon to operate as a bus.
-Processes may open a read/write channel to the daemon.  Any
-messages written to the daemon will be immediately echoed to
-all other clients. The daemon is lightweight and does little
-validation. It is up to the clients to transmit valid messages.
-
-
+I once wrote code to implement this protocol. I was going to
+put it here, but, I never did.  It was an interesting experiment,
+but, not that useful nowadays.
